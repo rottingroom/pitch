@@ -92,6 +92,7 @@
 }
 
 #logo {    
+    display: block;
     height: 40px;
     border-radius: 250px;
     margin-right: 22px;
@@ -99,6 +100,7 @@
 }
 
 svg {
+    display: block;
     margin-top: 15px;
     margin-bottom: 15px;
     height: 40px;
@@ -113,8 +115,13 @@ button {
     background: #1F788C;
     color: white;
     border-radius: 4px;
-    margin: 0 0 15px 0;
+    margin: 0 10px 15px 0;
 }
+
+* {
+    outline: 0;
+}
+
 
 /*type*/
 
@@ -141,10 +148,28 @@ li {
     font-family: 'Source Sans Pro', sans-serif;
     color: #1F788C;
 }
+a:link,
+a:visited {
+    color: #1F788C;
+    font-weight: normal;
+    text-decoration: none;
+}
 
 a:hover svg,
-a:hover #logo {
+a:hover #logo,
+a:focus svg,
+a:focus #logo {
     fill: #D9593D;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+a:hover button,
+a:focus button {
+    background-color: #D9593D;
+
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     -webkit-transition: all .3s;
