@@ -11,6 +11,6 @@ var img4 = 'http://rottingroom.github.io/pitch/img/img5.jpg';
 var ranNum = Math.floor(Math.random()*6);
 
 // Put images on page
-document.getElementById('background').style.backgroundImage = 'url("/img/img' + ranNum + '.jpg")';
+document.getElementById('background').style.backgroundImage = 'url("http://rottingroom.github.io/pitch/img/img' + ranNum + '.jpg")';
 
 $('#myname').lettering();
