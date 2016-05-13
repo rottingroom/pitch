@@ -155,6 +155,19 @@ a:visited {
     text-decoration: none;
 }
 
+a svg,
+a #logo,
+a button,
+a {
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+a:hover,
+a:focus {
+    color: #D9593D;
+}
+
 a:hover svg,
 a:hover #logo,
 a:focus svg,
@@ -162,18 +175,13 @@ a:focus #logo {
     fill: #D9593D;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    -webkit-transition: all .3s;
-    transition: all .3s;
 }
 
 a:hover button,
 a:focus button {
     background-color: #D9593D;
-
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    -webkit-transition: all .3s;
-    transition: all .3s;
 }
 
 .char1, .char9 {
@@ -201,9 +209,6 @@ a:focus button {
     }
     
     .sidebar {
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
         text-align: center;
         margin: 0 15% 0 15%;
         padding-top: 0;
@@ -211,6 +216,10 @@ a:focus button {
         -webkit-flex: 1 1 auto;
         -ms-flex: 1 1 auto;
         flex: 1 1 auto
+    }
+    
+    #logo {
+        display: inline-block;
     }
 
 }
@@ -224,6 +233,10 @@ a:focus button {
     
     button {
         margin-bottom: 10px;
+    }
+    
+    #logo {
+        display: block;
     }
     
 }
