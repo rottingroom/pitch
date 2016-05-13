@@ -2,6 +2,30 @@
 YOUR STYLES
 *******************/
 
+/*animations for loading*/
+
+@keyframes fade {
+    from { 
+        opacity: 0;
+    }
+    to { 
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from { 
+        transform: translateX(600px);
+        opacity: 0;
+    }
+    to { 
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*layout*/
+
 .bigwrapper {
     position: absolute;
     width: 100%;
@@ -14,11 +38,24 @@ YOUR STYLES
     background-size: cover;
     background-repeat: no-repeat;
     flex: 1 1 auto;
+    animation: fade 6s;
 }
 
 .sidebar {
     flex: 0 0 400px;
     padding: 50px;
+    animation: slideLeft .7s;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    display: inline-block;
+    margin-right: 20px;
+    
 }
 
 #logo {
@@ -26,12 +63,6 @@ YOUR STYLES
     height: 40px;
     border-radius: 250px;
     margin-right: 22px;
-}
-
-.sidebar li {
-    display: inline-block;
-    margin-right: 20px;
-    
 }
 
 svg {
@@ -51,10 +82,7 @@ button {
     margin: 0 0 15px 0;
 }
 
-
-
-
-/* Typography */
+/*type*/
 
 h1 {
     font-family: 'Source Sans Pro', sans-serif;
@@ -72,11 +100,6 @@ p {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: lighter;
     color: #999;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
 }
 
 li {
