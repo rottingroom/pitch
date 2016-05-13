@@ -1,11 +1,11 @@
 // My Scripts
 
 // Store image URL's
-var img0 = '/img/img1.jpg';
-var img1 = '/img/img2.jpg';
-var img2 = '/img/img3.jpg';
-var img3 = '/img/img4.jpg';
-var img4 = '/img/img5.jpg';
+var img0 = 'http://rottingroom.github.io/pitch/img/img1.jpg';
+var img1 = 'http://rottingroom.github.io/pitch/img/img2.jpg';
+var img2 = 'http://rottingroom.github.io/pitch/img/img3.jpg';
+var img3 = 'http://rottingroom.github.io/pitch/img/img4.jpg';
+var img4 = 'http://rottingroom.github.io/pitch/img/img5.jpg';
 
 // Get random number
 var ranNum = Math.floor(Math.random()*6);
